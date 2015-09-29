@@ -1,0 +1,97 @@
+<html>
+<head>
+  <script src="https://api.apiary.io/seeds/embed.js"></script>
+</head>
+
+<body>
+  <div>
+  <script>
+    var embed = new Apiary.Embed({
+      subdomain: 'pollsdemo2',
+      preferences: {
+        collapseMachineColumnByDefault: true
+      },
+      theme: {
+        fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif',
+
+        tableOfContents: {
+          backgroundColor: '#371969',
+          padding: '0px',
+
+          section: {
+            paddingBottom: '20px',
+            paddingTop: '20px',
+            marginBottom: '20px',
+            borderBottom: '1px solid #4A4090',
+
+            title: {
+              color: '#6BD3AA',
+              backgroundColor: '#4A4090',
+              paddingTop: '10px',
+              paddingBottom: '10px',
+              paddingLeft: '20px',
+              fontWeight: 'bold',
+
+              $hover: {
+                backgroundColor: '#6BD3AA',
+
+                text: {
+                  color: '#4A4090'
+                }
+              }
+            },
+
+            item: {
+              paddingLeft: '20px',
+              color: '#E5F25E',
+              fontWeight: 'normal',
+
+              $hover: {
+                text: {
+                  color: '#6BD3AA'
+                }
+              },
+
+              $selected: {
+                text: {
+                  fontWeight: 'bold'
+                }
+              },
+
+              subitems: {
+                color: '#FC7550',
+                border: 'none',
+                marginTop: '0px',
+                marginBottom: '20px',
+                paddingRight: '20px',
+
+                subitem: {
+                  margin: '0px',
+                  padding: '0px',
+                  paddingTop: '5px',
+                  paddingBottom: '5px',
+                  border: 'none',
+                  borderBottom: '1px solid #4A4090',
+
+                  $hover: {
+                    text: {
+                      color: '#E5F25E'
+                    }
+                  },
+
+                  $selected: {
+                    text: {
+                      fontWeight: 'bold'
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    });
+    </script>
+  </div>
+</body>
+</html>
